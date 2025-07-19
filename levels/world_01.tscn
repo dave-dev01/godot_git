@@ -1,0 +1,211 @@
+[gd_scene load_steps=14 format=3 uid="uid://80gr1gg1yagy"]
+
+[ext_resource type="Texture2D" uid="uid://cqa4kdryy36qu" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_naeyk"]
+[ext_resource type="Texture2D" uid="uid://ch8ehx5v3i4sp" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_o58wf"]
+[ext_resource type="PackedScene" uid="uid://dec7fklprmd0t" path="res://actors/player.tscn" id="3_wu64i"]
+[ext_resource type="Texture2D" uid="uid://b81symetdn6dy" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="4_or7x1"]
+[ext_resource type="Texture2D" uid="uid://bsy83nq43scdi" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="5_yso3o"]
+[ext_resource type="Texture2D" uid="uid://bm7to3wandngk" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="6_tii1u"]
+[ext_resource type="Shader" uid="uid://ctqmgbnbnq68" path="res://shader/Movement_clouds.gdshader" id="6_yso3o"]
+[ext_resource type="Texture2D" uid="uid://b1w0w0i5t3mp0" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="7_0heyt"]
+[ext_resource type="Texture2D" uid="uid://behkobvpa88m7" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="8_dp75u"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j8rs1"]
+texture = ExtResource("1_naeyk")
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0 = 0
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:2/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0/physics_layer_0/polygon_0/one_way = true
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0/physics_layer_0/polygon_0/one_way = true
+11:3/0 = 0
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:3/0/physics_layer_0/polygon_0/one_way = true
+13:3/0 = 0
+13:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:3/0/physics_layer_0/polygon_0/one_way = true
+15:3/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:4/0 = 0
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:5/0 = 0
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:8/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fwd2m"]
+texture = ExtResource("2_o58wf")
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.77703, -8, -3.41732)
+14:4/0/physics_layer_0/polygon_0/one_way = true
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.77703, -8, -3.41732)
+15:4/0/physics_layer_0/polygon_0/one_way = true
+16:4/0 = 0
+16:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.77703, -8, -3.41732)
+16:4/0/physics_layer_0/polygon_0/one_way = true
+17:4/0 = 0
+17:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.77703, -8, -3.41732)
+17:4/0/physics_layer_0/polygon_0/one_way = true
+18:4/0 = 0
+18:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3.77703, -8, -3.41732)
+18:4/0/physics_layer_0/polygon_0/one_way = true
+1:5/0 = 0
+3:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+14:5/0 = 0
+16:5/0 = 0
+18:5/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:1/size_in_atlas = Vector2i(3, 3)
+5:1/0 = 0
+9:1/size_in_atlas = Vector2i(3, 3)
+9:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_or7x1"]
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_j8rs1")
+sources/1 = SubResource("TileSetAtlasSource_fwd2m")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tii1u"]
+shader = ExtResource("6_yso3o")
+shader_parameter/move_speed = 0.01
+
+[node name="world_01" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(1.17241, 1)
+tile_set = SubResource("TileSet_or7x1")
+format = 2
+layer_0/name = "ground"
+layer_0/tile_data = PackedInt32Array(1114131, 262144, 1, 1048595, 262144, 3, 1048596, 262144, 3, 1114132, 262144, 1, 1048597, 262144, 3, 1114133, 262144, 1, 1114130, 196608, 1, 1048594, 196608, 2, 1114134, 327680, 1, 1048598, 327680, 2, 983058, 196608, 1, 983059, 262144, 1, 983060, 262144, 1, 983062, 327680, 1, 1048602, 65537, 1, 458752, 196608, 1, 524288, 196608, 2, 589824, 196608, 2, 655360, 196608, 2, 720896, 196608, 2, 786432, 196608, 2, 851968, 196608, 2, 917504, 196608, 2, 983040, 196608, 2, 1048576, 196608, 2, 1114112, 196608, 2, 1179648, 196608, 2, 1245184, 196608, 2, 458753, 262144, 1, 524289, 327680, 4, 589825, 327680, 4, 655361, 327680, 4, 720897, 327680, 4, 786433, 327680, 4, 851969, 327680, 4, 917505, 327680, 4, 983041, 327680, 4, 1048577, 327680, 4, 1114113, 327680, 4, 1179649, 327680, 4, 1245185, 327680, 4, 458754, 327680, 1, 524290, 327680, 2, 589826, 327680, 2, 655362, 327680, 2, 720898, 327680, 2, 786434, 327680, 2, 851970, 327680, 2, 917506, 327680, 2, 983042, 327680, 2, 1048578, 327680, 2, 1114114, 327680, 2, 1179650, 327680, 2, 1245186, 327680, 2, 1179651, 196608, 1, 1245187, 196608, 2, 1179652, 262144, 1, 1245188, 327680, 4, 1179653, 262144, 1, 1245189, 327680, 4, 1179654, 262144, 1, 1245190, 327680, 4, 1179655, 262144, 1, 1245191, 262144, 2, 1179656, 262144, 1, 1245192, 262144, 2, 1179657, 262144, 1, 1245193, 262144, 2, 1179658, 262144, 1, 1245194, 262144, 2, 1179659, 262144, 1, 1245195, 262144, 2, 1179660, 262144, 1, 1245196, 262144, 2, 1179661, 262144, 1, 1245197, 262144, 2, 1179662, 262144, 1, 1245198, 262144, 2, 1179663, 262144, 1, 1245199, 262144, 2, 1179664, 262144, 1, 1245200, 262144, 2, 1179665, 262144, 1, 1245201, 262144, 2, 1179666, 262144, 1, 1245202, 262144, 2, 1179667, 262144, 1, 1245203, 262144, 2, 1179668, 262144, 1, 1245204, 262144, 2, 1179669, 262144, 1, 1245205, 262144, 2, 1179670, 262144, 1, 1245206, 262144, 2, 1179671, 262144, 1, 1245207, 262144, 2, 1179672, 262144, 1, 1245208, 262144, 2, 1179673, 262144, 1, 1245209, 327680, 4, 1179674, 262144, 1, 1245210, 327680, 4, 1179675, 262144, 1, 1245211, 327680, 4, 1179676, 262144, 1, 1245212, 327680, 4, 1179677, 262144, 1, 1245213, 262144, 2, 1179678, 262144, 1, 1245214, 262144, 2, 1179679, 262144, 1, 1245215, 262144, 2, 1179680, 262144, 1, 1245216, 262144, 2, 1179681, 262144, 1, 1245217, 262144, 2, 1179682, 262144, 1, 1245218, 262144, 2, 1179683, 262144, 1, 1245219, 262144, 2, 1179684, 262144, 1, 1245220, 262144, 2, 1179685, 262144, 1, 1245221, 262144, 2, 1179686, 262144, 1, 1245222, 262144, 2, 1179687, 262144, 1, 1245223, 262144, 2, 1179688, 262144, 1, 1245224, 262144, 2, 1179689, 262144, 1, 1245225, 262144, 2, 1179690, 262144, 1, 1245226, 262144, 2, 1179691, 262144, 1, 1245227, 262144, 2, 1179692, 262144, 1, 1245228, 262144, 2, 1179693, 262144, 1, 1245229, 262144, 2, 1179694, 262144, 1, 1245230, 262144, 2, 1179695, 327680, 1, 1245231, 327680, 2, 1114119, 65537, 5, 1114121, 65537, 5, 1114120, 720897, 5, 983061, 262144, 1, 1114141, 917505, 5, 1048605, 917505, 4, 1048606, 983041, 4, 1048607, 1179649, 4, 1114143, 1179649, 5, 983046, 262144, 4, 983047, 262144, 4, 983048, 262144, 4, 983049, 262144, 4, 786456, 262144, 1, 655386, 262144, 1, 524316, 262144, 1, 393246, 262144, 1)
+layer_1/name = "tree"
+layer_1/tile_data = PackedInt32Array(851988, 65537, 1, 917530, 327681, 1, 917518, 589825, 1)
+layer_2/name = "plat"
+layer_2/tile_data = PackedInt32Array(1048601, 589824, 3, 1048602, 655360, 3, 1048603, 851968, 3, 1048589, 655360, 3, 1048590, 655360, 3, 1048591, 655360, 3, 1048592, 851968, 3, 1048588, 589824, 3)
+
+[node name="player" parent="." instance=ExtResource("3_wu64i")]
+position = Vector2(301, 118)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(33, 24)
+motion_mirroring = Vector2(432, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(-14, -86)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_or7x1")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(33, 24)
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_yso3o")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(33, 24)
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_tii1u")
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_tii1u")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_tii1u")
+position = Vector2(28, -94)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_tii1u")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(33, 24)
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_0heyt")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(33, 24)
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(432, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_dp75u")
+centered = false
